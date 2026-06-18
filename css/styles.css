@@ -1,4 +1,5 @@
 @import './utils.css';
+@import './anims.css';
 
 :root {
   /* Colors */
@@ -62,4 +63,14 @@ header{
   color: var(--color-light-text);
   text-align: center;
   padding: 50px 20px;
+}
+
+.hero__about {
+
+  border-radius: 50%;
+
+  box-shadow: 0 10px 10px #0005;
+  position: relative;
+  top: 72px;
+
 }
