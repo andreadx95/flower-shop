@@ -1,0 +1,58 @@
+@import './utils.css';
+
+:root {
+  /* Colors */
+  --color-dark-bg: #1F2937;
+  --color-light-text: #F9FAF8;
+  --color-secondary-text: #E5E7EB;
+  --color-button: #3882F6;
+  --color-quote-bg: #E5E7EB;
+
+  /* Font sizes */
+  --fs-hero-main: 48px;
+  --fs-hero-secondary: 18px;
+  --fs-header-logo: 24px;
+  --fs-info-header: 36px;
+  --fs-quote: 36px;
+
+  /* Font weights */
+  --fw-extra-bold: 800;
+  --fw-light: 300;
+
+  /* Font styles */
+  --style-italic: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-text);
+  padding: 10px 30px;
+}
+
+
+.menu {
+    list-style: none;
+    gap: 20px;
+    color: var(--color-light-text);
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-light-text);
+}
