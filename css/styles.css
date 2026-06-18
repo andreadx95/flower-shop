@@ -56,3 +56,10 @@ header{
     text-decoration: none;
     color: var(--color-light-text);
 }
+
+.hero {
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-text);
+  text-align: center;
+  padding: 50px 20px;
+}
