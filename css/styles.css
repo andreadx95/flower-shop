@@ -58,6 +58,10 @@ header{
     color: var(--color-light-text);
 }
 
+.menu a:hover {
+    text-decoration: underline;
+    color: var(--color-button);
+}
 .hero {
   background-color: var(--color-dark-bg);
   color: var(--color-light-text);
