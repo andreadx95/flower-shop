@@ -125,6 +125,11 @@ nav .menu a {
     color: var(--color-light-text);
 }
 
+nav .menu a.active {
+    text-decoration: none;
+    color: var(--color-button);
+}
+
 nav .menu a:hover {
     text-decoration: underline;
     color: var(--color-button);
