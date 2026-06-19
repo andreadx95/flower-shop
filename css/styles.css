@@ -189,7 +189,7 @@ nav #menu-toggle:checked ~ .menu {
 }
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden; /* Temporary fix for overflow issues */
 }
 
@@ -257,13 +257,19 @@ section {
     flex: 0 0 calc(25% - 15px); 
 }
 
+.product-quantity {
+  padding: 7px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+}
+
 @media (max-width: 768px) {
   .product-card {
     flex: 0 0 calc(50% - 15px); 
   }
 }
 
-.product-card p {
+.product-card .product-price {
   color: var(--color-button);
   font-size: 1.2rem;
   margin: 10px 0;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>FlowerShop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex space-between container">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="FlowerShop Logo"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                ☰
+            </label>
+            <ul class="d-flex menu fade-in">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><i class="fa fa-shopping-cart"></i><small> 2</small></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container fade-in">
+                <div class="product-details d-flex flex-wrap ">
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 1">
+                    </div>
+                    <div class="product-card">
+                        <h2>Rose Bouquet</h2>
+                        <p>A beautiful bouquet of fresh roses, perfect for any occasion.</p>
+                        <p class="product-price">$29.99</p>
+                        <input type="number" class="product-quantity" name="quantity" value="1" aria-label="quantity"
+                            min="1" step="1" placeholder="" inputmode="numeric" autocomplete="off" max="">
+                        <br> <br>
+                        <button><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FlowerShop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
