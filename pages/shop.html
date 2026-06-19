@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>FlowerShop</title>
 </head>
 
@@ -14,18 +15,139 @@
             <div class="logo">
                 <img src="../images/logo.png" alt="FlowerShop Logo">
             </div>
-            <ul class="d-flex menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                ☰
+            </label>
+            <ul class="d-flex menu fade-in">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
+                <li><i class="fa fa-shopping-cart"></i><small> 2</small></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="hero hero__shop">
+            <div class="container d-flex space-between flex-wrap relative justify-center tilt-in-fwd-tr">
+                <div class="d-flex flex-column justify-center align-center">
+                    <h1>Welcome to the Shop</h1>
+                    <p>Apply code <strong>FLOWER50</strong> at checkout for a special discount!</p>
+                    <input type="text" placeholder="Search for flowers..." class="search-input">
+                </div>
+            </div>
+        </section>
         <section>
-            <h1>Welcome to FlowerShop</h1>
-            <p>Your one-stop destination for beautiful flowers and arrangements.</p>
+            <div class="container fade-in">
+                <h4 class="section-title">Our Bestsellers</h4>
+                <div class="products d-flex flex-wrap space-between">
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 1">
+                        <h5>Rose Bouquet</h5>
+                        <p>$29.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 2">
+                        <h5>Lily Arrangement</h5>
+                        <p>$39.99</p>
+                        <button><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 3">
+                        <h5>Tulip Mix</h5>
+                        <p>$24.99</p>
+                        <button><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container fade-in">
+                <h4 class="section-title">Bouquets</h4>
+                <div class="products d-flex flex-wrap space-between">
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 1">
+                        <h5>Rose Bouquet</h5>
+                        <p>$29.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 2">
+                        <h5>Lily Arrangement</h5>
+                        <p>$39.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 3">
+                        <h5>Tulip Mix</h5>
+                        <p>$24.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/300x300.jpg" alt="Flower 4">
+                        <h5>Daisy Delight</h5>
+                        <p>$19.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+        </section>
+        <section class="container faq fade-in relative">
+            <h4>Frequently Asked Questions</h4>
+            <div class="faq-item">
+                <input type="checkbox" id="faq1">
+                <label class="faq-title" for="faq1">How does flower delivery work?</label>
+                <div class="faq-content">
+                    Choose your bouquet, add it to the cart, then enter the delivery address, date, and an optional
+                    message. Complete the payment and the order is confirmed.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq2">
+                <label class="faq-title" for="faq2">Can I send flowers anywhere in Italy?</label>
+                <div class="faq-content">
+                    Yes, nationwide delivery is available, including islands, with fast processing depending on the
+                    destination area.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq3">
+                <label class="faq-title" for="faq3">Can I order flowers remotely?</label>
+                <div class="faq-content">
+                    Yes. Select your floral arrangement, enter recipient details, choose the delivery date, and complete
+                    the order online in a few steps.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq4">
+                <label class="faq-title" for="faq4">What occasions are flowers suitable for?</label>
+                <div class="faq-content">
+                    Flowers are ideal for birthdays, anniversaries, graduations, weddings, apologies, and expressing
+                    sympathy or affection.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq5">
+                <label class="faq-title" for="faq5">What types of flower arrangements are available?</label>
+                <div class="faq-content">
+                    You can choose from roses, tulips, lilies, daisies, and mixed bouquets, all made with fresh seasonal
+                    flowers.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq6">
+                <label class="faq-title" for="faq6">How fast is the delivery?</label>
+                <div class="faq-content">
+                    In many areas, delivery can be completed within a few hours after ordering, depending on
+                    availability and location.
+                </div>
+            </div>
         </section>
     </main>
     <footer>

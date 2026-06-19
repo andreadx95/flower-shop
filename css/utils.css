@@ -26,6 +26,14 @@
   justify-content: center;
 }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

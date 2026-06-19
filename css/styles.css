@@ -48,10 +48,23 @@ main {
   flex: 1;
 }
 
-header{
+h1 { font-size: 48px; }
+h2 { font-size: 40px; }
+h3 { font-size: 32px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 10px;
+}
+
+header {
   background-color: var(--color-dark-bg);
   color: var(--color-light-text);
   padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 footer {
@@ -66,25 +79,93 @@ img {
   height: auto;
 }
 
+button {
+  background: var(--color-button);
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-.menu {
+button:hover {
+  background: #2a6ad1;
+}
+
+
+nav .menu {
     list-style: none;
     gap: 20px;
     color: var(--color-light-text);
 }
 
-.menu a {
+nav .menu a {
     text-decoration: none;
     color: var(--color-light-text);
 }
 
-.menu a:hover {
+nav .menu a:hover {
     text-decoration: underline;
     color: var(--color-button);
 }
 
+nav .menu li {
+    padding: 10px 0;
+}
+
+/* Mobile Nav */
+nav {
+  position: relative;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+nav .menu {
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+nav #menu-toggle:checked ~ .menu {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 150%;
+  background: #0000005c;
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  z-index: 999;
+  border-radius: 20px;
+}
+
+@media (min-width: 769px) {
+  nav .menu {
+    display: flex;
+    gap: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  nav .menu li {
+  padding: 0px;
+
+}
+}
+
 section {
   padding: 60px 0;
+  overflow: hidden; /* Temporary fix for overflow issues */
 }
 .hero {
   background-color: var(--color-dark-bg);
@@ -102,4 +183,72 @@ section {
   box-shadow: 0 10px 10px #0005;
   position: relative;
   top: 72px;
+}
+
+.hero__shop {
+  background-image: url('../images/mainbanner.webp');
+  background-position: center;
+}
+
+.hero__shop input[type="text"] {
+  padding: 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: 0;
+  margin-top: 30px;
+  font-size: 1rem;
+  background: #fff8;
+}
+
+.product-card {
+    flex: 0 0 calc(25% - 15px); 
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 0 calc(50% - 15px); 
+  }
+}
+
+
+.product-card p {
+  color: var(--color-button);
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-title {
+  display: block;
+  padding: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #f3f3f3;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 14px;
+}
+
+.faq-item input:checked ~ .faq-content {
+  max-height: 300px;
+  padding: 14px;
+}
+
+.about__story {
+  background-color: var(--color-quote-bg);
+  text-align: center;
 }
