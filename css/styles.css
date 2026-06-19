@@ -251,6 +251,15 @@ section {
   margin-top: 30px;
   font-size: 1rem;
   background: #fff8;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.hero__shop input[type="text"]:focus {
+  outline: none;
+  background: #fff;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 .product-card {
