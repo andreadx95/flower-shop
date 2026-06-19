@@ -52,6 +52,11 @@ main {
   flex: 1;
 }
 
+.logo img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
 h1 { font-size: 48px; }
 h2 { font-size: 40px; }
 h3 { font-size: 32px; }
@@ -225,6 +230,13 @@ section {
   color: var(--color-light-text);
 }
 
+.hero img {
+  width: 380px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .hero h1{
   font-size: var(--fs-hero-main);
   font-weight: var(--fw-extra-bold);
@@ -254,7 +266,16 @@ section {
 }
 
 .product-card {
-    flex: 0 0 calc(25% - 15px); 
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
