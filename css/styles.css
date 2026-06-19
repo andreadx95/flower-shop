@@ -37,6 +37,9 @@
 html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
+}
+
+p {
   line-height: 1.5;
 }
 
@@ -55,6 +58,16 @@ h3 { font-size: 32px; }
 h4 { font-size: 24px; }
 h5 { font-size: 20px; }
 h6 { font-size: 18px; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 18px; }
+  h6 { font-size: 16px; }
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-bottom: 10px;
 }
@@ -80,7 +93,7 @@ img {
   height: auto;
 }
 
-button {
+button, .btn {
   background: var(--color-button);
   padding: 10px 30px;
   border-radius: 20px;
@@ -90,8 +103,14 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, .btn:hover {
   background: #2a6ad1;
+}
+
+button.outline, .btn.outline {
+  background: transparent;
+  border: 2px solid white ;
+  color: white;
 }
 
 
@@ -168,6 +187,34 @@ section {
   padding: 60px 0;
   overflow: hidden; /* Temporary fix for overflow issues */
 }
+
+
+.call-to-action {
+  background-color: var(--color-button);
+  color: white;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+.call-to-action .container {
+  padding: 0px 10%;
+}
+
+
+.quotes {
+  background-color: var(--color-quote-bg);
+  margin: 40px 0;
+}
+
+.quotes p {
+  font-size: var(--fs-quote);
+  font-style: italic;
+  text-align: center;
+  font-weight: var(--fw-light);
+}
+
 .hero {
   background-color: var(--color-dark-bg);
   color: var(--color-light-text);
@@ -211,7 +258,6 @@ section {
   }
 }
 
-
 .product-card p {
   color: var(--color-button);
   font-size: 1.2rem;
@@ -250,6 +296,5 @@ section {
 }
 
 .about__story {
-  background-color: var(--color-quote-bg);
   text-align: center;
 }
