@@ -345,3 +345,6 @@ section {
   background: url(../images/pattern.webp);
   background-size: 20%;
 }
+.section-tight {
+  padding: 20px 0;
+}
