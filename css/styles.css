@@ -27,7 +27,6 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff2') format('woff2');
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -36,14 +35,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
 
 header{
   background-color: var(--color-dark-bg);
   color: var(--color-light-text);
   padding: 10px 30px;
+}
+
+footer {
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-text);
+  text-align: center;
+  padding: 20px;
 }
 
 
@@ -62,19 +80,24 @@ header{
     text-decoration: underline;
     color: var(--color-button);
 }
+
+section {
+  padding: 60px 0;
+}
 .hero {
   background-color: var(--color-dark-bg);
   color: var(--color-light-text);
-  text-align: center;
-  padding: 50px 20px;
+}
+
+.hero h1{
+  font-size: var(--fs-hero-main);
+  font-weight: var(--fw-extra-bold);
+  margin-bottom: 20px;  
 }
 
 .hero__about {
-
   border-radius: 50%;
-
   box-shadow: 0 10px 10px #0005;
   position: relative;
   top: 72px;
-
 }
