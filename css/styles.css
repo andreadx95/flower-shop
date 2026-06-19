@@ -106,6 +106,7 @@ button, .btn {
   border: 0;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 }
 
 button:hover, .btn:hover {
