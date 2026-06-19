@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>FlowerShop</title>
+    <title>Contact Us - FlowerBoutique</title>
 </head>
 
 <body>
     <header>
         <nav class="d-flex space-between container">
             <div class="logo">
-                <a href="../index.html"><img src="../images/logo.webp" alt="FlowerShop Logo"></a>
+                <a href="../index.html"><img src="../images/logo.webp" alt="FlowerBoutique Logo"></a>
             </div>
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="hamburger">
@@ -27,14 +27,70 @@
         </nav>
     </header>
     <main>
+        <!-- Contact intro -->
         <section>
-            <h1>Welcome to FlowerShop</h1>
-            <p>Your one-stop destination for beautiful flowers and arrangements.</p>
+            <div class="container">
+                <h1>Get in touch</h1>
+                <p>Have a question about an order, or just want to say hello? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <!-- Shop image -->
+    <section class="section-tight">
+        <div class="container">
+            <img src="../images/shop-front.webp" alt="FlowerBoutique storefront in Tirana"
+                style="width:100%; max-height:350px; object-fit:cover; border-radius:10px;">
+        </div>
+    </section>
+
+        <!-- Contact info + form -->
+        <section>
+            <div class="container d-flex space-between">
+                <div class="col">
+                    <h4>Contact details</h4>
+                    <p>Rruga e Kavajës 45<br>Tirana 1001, Albania</p>
+                    <p>Email: hello@flowerboutique.al</p>
+                    <p>Phone: +355 69 123 4567</p>
+                    <p>Mon–Sat: 9am – 6pm<br>Sunday: Closed</p>
+                </div>
+
+                <div class="col">
+                    <h4>Send us a message</h4>
+                    <form>
+                        <div class="mb-20">
+                            <input type="text" placeholder="Your name" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ccc;">
+                        </div>
+                        <div class="mb-20">
+                            <input type="email" placeholder="Your email" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ccc;">
+                        </div>
+                        <div class="mb-20">
+                            <textarea placeholder="Your message" rows="5" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ccc;"></textarea>
+                        </div>
+                        <button type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section>
+            <div class="container">
+                <h4>Find us</h4>
+                <iframe
+                    src="https://www.google.com/maps?q=Rruga%20e%20Kavaj%C3%ABs%2C%20Tirana%2C%20Albania&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0; border-radius:10px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-when-downgrade">
+                </iframe>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2026 FlowerShop. All rights reserved.</p>
+            <p>&copy; 2026 FlowerBoutique. All rights reserved.</p>
         </div>
     </footer>
 </body>
