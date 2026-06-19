@@ -257,6 +257,10 @@ section {
     flex: 0 0 calc(25% - 15px); 
 }
 
+.product-card a {
+    text-decoration: none;
+}
+
 .product-quantity {
   padding: 7px;
   border-radius: 14px;
@@ -269,7 +273,7 @@ section {
   }
 }
 
-.product-card .product-price {
+.product-price {
   color: var(--color-button);
   font-size: 1.2rem;
   margin: 10px 0;
