@@ -19,9 +19,6 @@
   /* Font weights */
   --fw-extra-bold: 800;
   --fw-light: 300;
-
-  /* Font styles */
-  --style-italic: italic;
 }
 
 @font-face {
@@ -54,7 +51,7 @@ main {
 header{
   background-color: var(--color-dark-bg);
   color: var(--color-light-text);
-  padding: 10px 30px;
+  padding: 20px 30px;
 }
 
 footer {
@@ -62,6 +59,11 @@ footer {
   color: var(--color-light-text);
   text-align: center;
   padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 
