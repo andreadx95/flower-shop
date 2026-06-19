@@ -263,6 +263,7 @@ section {
   background-position: 0% 75%;
 }
 
+
 .hero__shop input[type="text"] {
   padding: 20px;
   width: 100%;
@@ -349,7 +350,7 @@ section {
   padding: 14px;
 }
 
-.about__story {
+.about__story, .hero__bestsellers {
   background: url(../images/pattern.webp);
   background-size: 20%;
 }
