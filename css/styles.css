@@ -194,7 +194,7 @@ nav #menu-toggle:checked ~ .menu {
 }
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden; /* Temporary fix for overflow issues */
 }
 
@@ -244,15 +244,15 @@ section {
 }
 
 .hero__about {
-  border-radius: 50%;
-  box-shadow: 0 10px 10px #0005;
-  position: relative;
-  top: 72px;
+ background-image: url('../images/about.jpg');
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero__shop {
   background-image: url('../images/mainbanner.webp');
-  background-position: center;
+  background-attachment: fixed;
+  background-position: 0% 75%;
 }
 
 .hero__shop input[type="text"] {
@@ -263,6 +263,15 @@ section {
   margin-top: 30px;
   font-size: 1rem;
   background: #fff8;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.hero__shop input[type="text"]:focus {
+  outline: none;
+  background: #fff;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 .product-card {
@@ -278,13 +287,23 @@ section {
   margin-bottom: 10px;
 }
 
+.product-card a {
+    text-decoration: none;
+}
+
+.product-quantity {
+  padding: 7px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+}
+
 @media (max-width: 768px) {
   .product-card {
     flex: 0 0 calc(50% - 15px); 
   }
 }
 
-.product-card p {
+.product-price {
   color: var(--color-button);
   font-size: 1.2rem;
   margin: 10px 0;
@@ -323,4 +342,6 @@ section {
 
 .about__story {
   text-align: center;
+  background: url(../images/pattern.webp);
+  background-size: 20%;
 }
