@@ -53,7 +53,7 @@ main {
 }
 
 .logo img {
-  height: 24px;
+  height: 36px;
   width: auto;
   display: block;
 }
@@ -118,6 +118,9 @@ button.outline, .btn.outline {
   color: white;
 }
 
+nav {
+  align-items: center;
+}
 
 nav .menu {
     list-style: none;
@@ -289,6 +292,7 @@ section {
 
 .product-card a {
     text-decoration: none;
+    color: black;
 }
 
 .product-quantity {
@@ -341,7 +345,6 @@ section {
 }
 
 .about__story {
-  text-align: center;
   background: url(../images/pattern.webp);
   background-size: 20%;
 }
