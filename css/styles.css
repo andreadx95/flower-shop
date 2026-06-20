@@ -234,6 +234,13 @@ section {
   color: var(--color-light-text);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+}
+
+
 .hero img {
   width: 380px;
   height: 220px;
